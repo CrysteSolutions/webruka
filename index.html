@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    a {
+      color: #008CBA;
+    }
+    a:hover {
+      color: #006DAC;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    function parseMarkdown(mdText) {
+      const marked = window.marked;
+      return marked(mdText);
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const mdText = `
+# Welcome to Webruka!
+
+...
+
+## Upcoming Posts
+
+- [Post 3](details-not-provided)
+- [P4](details-not-provided)
+- [Post 5](details-not-provided)
+- [Post 6](details-not-provided)
+
+## Past Post
+      `;
+      document.querySelector('#markdown-content').innerHTML = parseMarkdown(mdText);
+    });
+  </script>
+</head>
+<body>
+  <div id="markdown-content"></div>
+</body>
+</html>
