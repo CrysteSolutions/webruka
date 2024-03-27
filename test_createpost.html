@@ -2,6 +2,14 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style_test.css">
+    <meta charset="utf-8">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
             
 .container-1 {
@@ -365,13 +373,7 @@
   font-size: 22px;
   color: #000000;
 }
-.20 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 22px;
-  color: #000000;
-}
+
 .toggle-on {
   background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/8f9dd6ece2de2e57463ab8c785d51093ae21aee2?Expires=1711644655&KeyName=fn12-cdn&Signature=K_5Kr8UmcaE2GL3UM0DgS31KARk=') 50% / contain no-repeat;
   width: 50px;
@@ -833,72 +835,86 @@
   <body style="margin: 0%;">
     <div class="create-post">
       <div class="home-page-default">
-        <div class="navbar">
-          <div class="logo">
-            Logo
-          </div>
-          <div class="notification-bar">
-            <div class="bell_in_navbar">
-              <div class="ellipse-18">
+        <nav class="navbar bg-primary" data-bs-theme=".bg-success">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <i class="lni lni-netlify"></i>
+              Webruka
+            </a>
+            <form class="d-flex">
+              <button class="navbar-icon-btn" type="button">
+                <i class="lni lni-alarm"></i>
+              </button>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="darkModeSwitch"><br>
+                <label class="form-check-label-text-light"
+                  for="darkModeSwitch">Mode</label>
+
               </div>
-            </div>
-            <span class="number_of_notification">
-              3
-            </span>
+              <button class="navbar-icon-btn" type="button">
+                <i class="lni lni-cog"></i>
+              </button>
+            </form>
           </div>
-          <div class="mode_and_setting">
-            <div class="mode_part">
-              <img class="mode_switch" />
-              <span class="mode">
-                Mode
-              </span>
-              <div class="ellipse-16">
-              </div>
-            </div>
-            <div class="setting_part">
-              <div class="setting-2">
-              </div>
-            </div>
-          </div>
-        </div>
+        </nav>
+     
         <div class="container-24">
-          <!-- <div class="rectangle-121">
-              </div> -->
-          <div class="navigation-bar">
+          <div class="wrapper">
+            <aside id="sidebar">
+              <div class="d-flex">
+                <div class="sidebar-logo">
+                  <img src="./image/download.jpeg" alt="profile-image"
+                    class="profile-image">
+                  <a href="#">G.H.L.Gamage</a>
+                </div>
+                <button class="toggle-btn" type="button">
+                  <i class="lni lni-angle-double-right"></i>
+                </button>
+              </div>
+              <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="lni lni-home"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="lni lni-circle-plus"></i>
+                    <span>Creat Post</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="lni lni-user"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="lni lni-bar-chart"></i>
+                    <span>Statistics</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="lni lni-users"></i>
+                    <span>Connect Social Media</span>
+                  </a>
+                </li>
 
-            <div class="double-left">
-            </div>
-            <div class="frame-13">
-              <div class="customer">
+              </ul>
+              <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                  <i class="lni lni-exit"></i>
+                  <span>Logout</span>
+                </a>
               </div>
-            </div>
-            <div class="navi-bar">
-              <div class="home-11">
-              </div>
-            </div>
-            <div class="container">
-              <div class="plus-1">
-              </div>
-            </div>
-            <div class="frame-11">
-              <div class="user-13">
-              </div>
-            </div>
-            <div class="frame-12">
-              <div class="search-11">
-              </div>
-            </div>
-            <div class="network-1">
-            </div>
-            <div class="container-39">
-              <div class="logout">
-              </div>
-            </div>
-
-            <!-- <div class="facebook">
-                </div> -->
+            </aside>
+          
           </div>
-          <!-- <div class="media_quary"> -->
+          
           <div class="container-13">
             <div class="create-post-15">
               Create Post
@@ -963,7 +979,7 @@
                   <div class="post-type">
                     Post Type
                   </div>
-                  <!-- <img class="ellipse-21" /> -->
+                  
                   <div class="story">
                     <label for="story">
                       Story
@@ -979,12 +995,7 @@
                     <input type="checkbox" name="post" id="post">
                   </div>
                 </div>
-                <!-- <div class="container-11">
-                    <img class="container-33" />
-                    <span class="post">
-                      Post
-                    </span>
-                  </div> -->
+                
               </div>
               <div class="container-28">
                 <div class="hashtag-caption">
@@ -999,31 +1010,18 @@
                     <option value="#facebook"></option>
                     <option value="#twitter"></option>
                   </datalist>
-                  <!-- <div class="container-6">
-                      <span class="add-hashtag-here">
-                        Add hashtag here .....
-                      </span>
-                    </div> -->
+                  
                 </div>
                 <textarea class="container-44"
                   placeholder="Add your caption here .....">
                     </textarea>
-                <!-- <div class="add-your-caption-here">
-                      Add your caption here .....
-                    </div> -->
-                <!-- <div class="container-38">
-                      <div class="grinning-face-with-big-eyes">
-                      </div>
-                    </div> -->
+                
 
               </div>
               <div class="publish-or-schedule">
                 <div class="container-40">
                   <div class="container-10">
-                    <!-- <img class="container-21" />
-                      <span class="publish-now">
-                        Publish Now
-                      </span> -->
+                   
                     <input class="container-18" type="checkbox"
                       name="publish-now"
                       id="publish-now" />
@@ -1031,10 +1029,7 @@
                       Now</label>
                   </div>
                   <div class="container-2">
-                    <!-- <img class="ellipse-26" />
-                      <span class="schedule">
-                        Schedule 
-                      </span> -->
+                   
                     <input class="container-18" type="checkbox" name="schedule"
                       id="schedule" />
                     <label class="publish-now" for="schedule">Schedule</label>
@@ -1043,21 +1038,21 @@
                 <div class="line-16">
                 </div>
                 <div class="container-29">
-                  <div class="container-27">
+                  <button class="container-27">
                     <span class="publish-now-46">
                       Publish Now
                     </span>
-                  </div>
-                  <div class="container-5">
+                  </button>
+                  <button class="container-5">
                     <span class="discard">
                       Discard
                     </span>
-                  </div>
-                  <div class="container-32">
+                  </button>
+                  <button class="container-32">
                     <span class="preview">
                       Preview
                     </span>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1066,60 +1061,62 @@
                 <div class="your-prompt">
                   Your Prompt
                 </div>
-                <div class="rectangle-100">
-                </div>
+                <textarea class="rectangle-100" placeholder="Enter your prompt">
+                </textarea>
                 <div class="tone-of-vice">
                   Tone of vice
                 </div>
                 <div class="container-8">
-                  <div class="container-51">
+                  <button class="container-51">
                     <span class="polite">
                       Polite
                     </span>
-                  </div>
-                  <div class="container-23">
+                  </button>
+                  <button class="container-23">
                     <span class="witty">
                       Witty
                     </span>
-                  </div>
-                  <div class="container-48">
+                  </button>
+                  <button class="container-48">
                     <span class="friendly">
                       Friendly
                     </span>
-                  </div>
-                  <div class="container-34">
+                  </button>
+                  <button class="container-34">
                     <span class="enthusiastic">
                       Enthusiastic
                     </span>
-                  </div>
+                  </button>
                 </div>
                 <div class="container-25">
-                  <div class="container-17">
+                  <button class="container-17">
                     <span class="funny">
                       Funny
                     </span>
-                  </div>
-                  <div class="container-37">
+                  </button>
+                  <button class="container-37">
                     <span class="informational">
                       Informational
                     </span>
-                  </div>
+                  </button>
                 </div>
                 <div class="container-42">
                   <div class="approximate-word">
                     Approximate word :
                   </div>
-                  <div class="container-3">
-                    <span class="20">
+                  <input type="number" value="20"  class="container-3">
+                    <!-- <span class="20">
                       20
-                    </span>
-                  </div>
+                    </span> -->
+                  </input>
                 </div>
                 <div class="container-1">
                   <div class="generate-hashtags">
-                    Generate hashtags
+                  <label for="generate_hashtag">Generate hashtags</label>
                   </div>
-                  <div class="toggle-on">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style="width: 40px; margin-top: 25px;">
+                    <!-- <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label> -->
                   </div>
                 </div>
                 <div class="container-12">
@@ -1129,13 +1126,13 @@
                   <div class="toggle-on-16">
                   </div>
                 </div>
-                <div class="container-19">
+                <button class="container-19">
                   <div class="background-remover">
                   </div>
                   <div class="generate-with-ai">
                     Generate With AI
                   </div>
-                </div>
+                </button>
               </div>
               <div class="container-30">
                 <span class="result">
@@ -1147,4 +1144,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
