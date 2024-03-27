@@ -29,14 +29,17 @@ body {
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 100h;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     background-color: #fafbfe;
 }
 
+/* side bar */
+
 #sidebar {
+    display: flex;
     height: 100vh;
     width: 70px;
     min-width: 70px;
@@ -45,6 +48,16 @@ body {
     background-color: #0e2238;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.d-flex{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.toggle-btn i{
+    
 }
 
 #sidebar.expand {
@@ -66,18 +79,21 @@ body {
 
 .sidebar-logo {
     margin: auto 0;
+   
 }
 
 .sidebar-logo a {
     color: #FFF;
     font-size: 1.15rem;
     font-weight: 600;
+   
+   
 }
 
 .sidebar-logo img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
 
 }
 
@@ -148,28 +164,30 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
+/* navigation bar */
 .navbar-icon-btn {
     background: none;
     border: none;
     color: inherit; 
     margin-right: 15px; 
-    font-size: 25px;  
+    font-size: 25px;
+    padding-right: 25px;  
 }
 
 .form-check.form-switch {
     align-items: center; 
     margin-bottom: 0; 
-    width: 30px;
-    padding: 0 20px 0 20px;
+    width: 40px;
+    padding-right: 25px;
 }
 
 .form-check-label {
     margin-left: 10px; 
 }
 
-
 .navbar {
-    padding: 10px 15px; 
+    padding: 10px 10px; 
 }
 
 .navbar-brand {
@@ -189,7 +207,96 @@ a.sidebar-link:hover {
 }
 
 
+.list-account {
+    margin-bottom: 10px;
+    padding: 20px 0px 0px 30px;
+    list-style: none; 
+}
+
+.connect-dropdown-center {
+    background-color: #767a82;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.connect-dropdown-center a {
+    color: #fafbfe;
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+}
+
+.connect-dropdown-center a span {
+    margin-left: 10px;
+    width: 250px;
+}
+
+.connect-dropdown-center a i {
+    font-size: 24px; 
+    margin-right: 5px; 
+    white-space: nowrap; 
+}
+
+.sidebar-dropdown {
+    margin-top: 10px;
+}
+
+.sidebar-dropdown form {
+    margin-bottom: 0;
+}
+
+.sidebar-dropdown form hr {
+    margin-top: 10px; 
+}
+
+
+/* connect dropdown */
+
+.dropdown-connect{
+    width: 55%;
+}
 
 
 
+
+/* show connect profile */
+
+.show-connect-profile{
+    margin-top: 10px;
+    padding-left: 30px;
+    margin-bottom:-20px;
+}
+
+.visually{
+    font-size: 13px;
+    text-align: center;
+    width: 100px;
+}
+
+.col-auto button{
+    background-color: red;
+    border-color: red;
+}
+
+.col-auto button :hover{
+    background-color: none;
+
+}
+
+/* show log profile details */
+
+.col-md-4{ 
+   grid-template-columns: 60% 70%;
  
+}
+.col-md-4 img{
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+
+
