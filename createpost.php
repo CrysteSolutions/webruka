@@ -16,7 +16,7 @@
     <div class="create-post">
       <div class="home-page-default">
         <?php 
-        include topnavbar.php; 
+        include 'topnavbar.php'; 
         ?>
 
         <div class="container-24">
