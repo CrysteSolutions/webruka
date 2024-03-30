@@ -1,79 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- <link rel="stylesheet" href="style_test.css"> -->
-    <meta charset="utf-8">
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body style="margin: 0%;">
-    <div class="create-post">
-      <div class="home-page-default">
+
         <?php 
         include 'topnavbar.php'; 
         ?>
 
-        <div class="container-24">
-          <div class="wrapper">
-            <aside id="sidebar">
-              <div class="d-flex">
-                <div class="sidebar-logo">
-                  <img src="./images/download.jpeg" alt="profile-image"
-                    class="profile-image">
-                  <a href="#">G.H.L.Gamage</a>
-                </div>
-                <button class="toggle-btn" type="button">
-                  <i class="lni lni-angle-double-right"></i>
-                </button>
-              </div>
-              <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
-                    <i class="lni lni-home"></i>
-                    <span>Home</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
-                    <i class="lni lni-circle-plus"></i>
-                    <span>Creat Post</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
-                    <i class="lni lni-user"></i>
-                    <span>Account</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
-                    <i class="lni lni-bar-chart"></i>
-                    <span>Statistics</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">
-                    <i class="lni lni-users"></i>
-                    <span>Connect Social Media</span>
-                  </a>
-                </li>
-
-              </ul>
-              <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                  <i class="lni lni-exit"></i>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </aside>
-
-          </div>
+        <?php 
+        include 'sidenav.php'; 
+        ?>
           <!-- <div class="flex_column"> -->
             <form class="flex_column">
               <div class="container-13">
