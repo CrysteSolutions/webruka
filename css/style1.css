@@ -325,6 +325,9 @@ a.sidebar-link:hover {
 }
 
 
+
+
+
 /* .............Statistic page............................ */
 
 
@@ -341,3 +344,66 @@ a.sidebar-link:hover {
 .static-btn i{
     padding: 5px;
 }
+
+/* media btn */
+
+.h_media-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h_media-btn button{
+    margin-right: 1rem;
+    width: 9rem;
+    
+}
+
+.h_media-btn i{
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .h_media-btn {
+        display: block;
+        
+    }
+    .h_media-btn button{
+        margin-right: 1rem;
+        width: 9rem;
+        
+    }
+    
+    .h_media-btn i{
+        padding: 5px;
+    }
+    
+}
+
+/* chart1 */
+
+.h_chart1{
+    margin: 0rem auto 2rem auto;
+}
+
+.h_chart1 .card{
+   width: 90%;
+   margin:  2rem auto 0 auto;
+}
+
+
+/* chart2 */
+
+
+.text-center {
+    text-align: left!important;
+}
+
+.h_chart2-reach{
+    margin:auto 1rem;
+}
+
+.post-link-click{
+     margin-left:3rem;
+}
+
+
