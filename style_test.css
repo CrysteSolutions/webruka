@@ -1,0 +1,226 @@
+.navbar {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    background: #CF9FEC;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 3% 1% 3% ; /* top right bottom left */
+    border-radius: 20px 20px 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .logo {
+    border: 2px solid #000000;
+    margin: 1px 19.5px 20px 0;
+    display: inline-block;
+    width: 75%;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+  }
+  .notification-bar {
+    position: relative;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 6.6px 20px 6.6px;
+    width: 56px;
+    box-sizing: border-box;
+  }
+  .bell_in_navbar {
+    background: url("images/bell1.png")50% / cover no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    translate: -50% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 56px;
+    height: 57px;
+    box-sizing: border-box;
+  }
+  .ellipse-18 {
+    border-radius: 17px;
+    background: #FFFFFF;
+    width: 34px;
+    height: 34px;
+  }
+  .number_of_notification {
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+  }
+  .mode_and_setting {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .mode_part {
+    position: relative;
+    margin: 0 42px 3px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .mode_switch {
+    position: relative;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 28px;
+  }
+  .ellipse-16 {
+    border-radius: 8px;
+    background: #FFF617;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+  }
+  .setting_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+  }
+  .setting-2 {
+    background: url("images/setting1.png") 50% / cover no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navigation-bar {
+    border-radius: 0 30px 0 0;
+    background: #DCBBBE;
+    /* position: absolute; */
+    left: 0px;
+    top: 0px;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 31px 0 54px 0;
+    box-sizing: border-box;
+  }
+
+  .double-left {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/9cb689d2502636c92614d26e9e2174d4a0889556?Expires=1711644655&KeyName=fn12-cdn&Signature=7gSU4gX0ThwgZyEgQu0sZhr27xg=') 50% / contain no-repeat;
+    position: relative;
+    margin-bottom: 43px;
+    width: 50px;
+    height: 50px;
+  }
+  .frame-13 {
+    border-radius: 30px;
+    background: #F3ACAC;
+    /* position: absolute; */
+    /* left: 26px;
+    top: 37px; */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 27px;
+  }
+  .customer {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/5a8a72d47304615964801b613a36b902f2ac7ebb?Expires=1711644655&KeyName=fn12-cdn&Signature=X3fcUIH1vRHESDBsXt5tBHNZPUc=') 50% / contain no-repeat;
+    /* position: absolute; */
+    /* left: 5px;
+    right: 5px; */
+    /* bottom: 5px; */
+    height: 50px;
+  }
+  .navi-bar {
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+  }
+  .home-11 {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/578f23d36a5243a4a135cd2b1f8e49a9d9e9cc7f?Expires=1711644655&KeyName=fn12-cdn&Signature=0H1tmcl4t4p7C6nyySOkBSRfywU=') 50% / cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .container {
+    background: #B38A8A;
+    position: relative;
+    margin-bottom: 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px 0 12px 0;
+    height: 78px;
+    width: 90px;
+    box-sizing: border-box;
+  }
+  .frame-11 {
+    margin-bottom: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+  }
+  .user-13 {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/57f407a5b8185a6caa0131c6e7a9f7e943b1fb16?Expires=1711644655&KeyName=fn12-cdn&Signature=WPAAGmGp6rD_w9FJqGjO10twfQ0=') 50% / cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .frame-12 {
+    margin-bottom: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+  }
+  .search-11 {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/e71c4c584aed2ffae9733c943fcf6b12540c3e1e?Expires=1711644655&KeyName=fn12-cdn&Signature=sbuqh7_0b-noHKBg_rNH8bJJF1Q=') 50% / cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .logout {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/fda15c1d1994133d8b5c2020176e171262e117d8?Expires=1711644655&KeyName=fn12-cdn&Signature=gIwQc3RoMWkW8aOWGIoGn-e1Nv4=') 50% / contain no-repeat;
+    width: 40px;
+    height: 45px;
+  }
+  
+  .plus-1 {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/6c7c4c3aa5fa646874d26b9c656c0aeff143f0a1?Expires=1711644655&KeyName=fn12-cdn&Signature=GXhdmrlEEKID5C-H9ezCpcDchJg=') 50% / cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .network-1 {
+    background: url('https://fn12.com/api/clusters/cluster-fn12-prod-asia-southeast1/projects/JQvUzGaSKUfBsWBot2WyJn/assets/images/e672a836a6e2625d4d620bea68c5a5271254f3db?Expires=1711644655&KeyName=fn12-cdn&Signature=7Ihzk4jNz5trisxW4fyq_LFQiU0=') 50% / cover no-repeat;
+    margin-bottom: 276px;
+    width: 50px;
+    height: 50px;
+  }
+  .container-39 {
+    border-radius: 20px;
+    border: 2px solid #000000;
+    position: relative;
+    margin-right: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 6px 9px 6px 10px;
+    width: 59px;
+    height: 57px;
+    box-sizing: border-box;
+  }  

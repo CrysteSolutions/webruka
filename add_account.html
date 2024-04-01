@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+
+
+    <div class="containe">
+        <header>
+            <nav class="navbar bg-primary" data-bs-theme=".bg-success">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="lni lni-netlify"></i>
+                        Webruka
+                    </a>
+                    <form class="d-flex">
+                        <button class="navbar-icon-btn" type="button">
+                            <i class="lni lni-alarm"></i>
+                        </button>
+                        <div class="form-check form-switch">   
+                             <input class="form-check-input" type="checkbox" id="darkModeSwitch"><br>
+                             <label class="form-check-label-text-light" for="darkModeSwitch">Mode</label>
+                          
+                        </div>
+                        <button class="navbar-icon-btn" type="button">
+                            <i class="lni lni-cog"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <aside id="sidebar">
+                <div class="d-flex">
+                    <div class="sidebar-logo">
+                        <img src="./image/download.jpeg" alt="profile-image" class="profile-image"> 
+                        <a href="#">G.H.L.Gamage</a>
+                    </div>
+                    <button class="toggle-btn" type="button">
+                        <i class="lni lni-angle-double-right"></i>
+                    </button>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-circle-plus"></i>
+                            <span>Creat Post</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-user"></i>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-bar-chart"></i>
+                            <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-users"></i>
+                            <span>Connect Social Media</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="sidebar-logout">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-exit"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </aside>
+            
+           <article>
+           
+             <div class="content">
+                  <div class="main p-3">
+                     <h6 class="text-decoration-underline">Add Media Account</h6>
+                      <div class="position-relative">
+                           <div class="position-absolute top-0 end-0">
+                              <div class="card bg-warning-subtle  mb-3" style="max-width: 400px;">
+                                 <div class="row g-0">
+                                   <div class="col-md-4">
+                                    <img src="./image/download.jpeg" class="img-fluid rounded-start" alt="...">
+                                   </div>
+                                   <div class="col-md-8">
+                                     <div class="card-body">
+                                      <h5 class="card-title">G.H.L.Gamage</h5>
+                                      <p class="card-text">User bio</p>
+                                      <a href="#" class="card-link">Edit Profile</a>
+                                    </div>
+                                   </div>
+                                 </div>
+                               </div>
+                        </div> 
+                    </div>
+                    <div class="">
+                        <li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class="" data-bs-toggle="collapse"
+                                data-bs-target="#facebook" aria-expanded="false" aria-controls="facebook">
+                                <i class="lni lni-facebook-original"></i>
+                                <span>Connect Facebook Account</span>
+                                <i class="lni lni-chevron-down"></i>
+                             </a>
+                            </div>
+                            <ul id="facebook" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <div class="dropdown-connect">
+                                    <form class="px-4 py-3">
+                                      <div class="mb-3">
+                                        <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                      </div> 
+                                      <div class="mb-3">
+                                        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                      </div>
+                                      <div class="mb-3">
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                          <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Connect</button> 
+                                      <hr>  
+                                    </form>
+                                </div>   
+                            </ul>
+                        </li>
+                        <li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class=" " data-bs-toggle="collapse"
+                                data-bs-target="#instagram" aria-expanded="false" aria-controls="instagram">
+                                <i class="lni lni-instagram"></i>
+                                <span>Connect Instagram Account</span>
+                                <i class="lni lni-chevron-down"></i>    
+                             </a>
+                            </div>
+                            <ul id="instagram" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <div class="dropdown-connect">
+                                 <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                    </div> 
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Connect</button> 
+                                    <hr> 
+                                  </form>
+                                </div>     
+                            </ul>
+                           <div class="show-connect-profile">
+                             <form class="row g-3">
+                                <div class="col-auto">
+                                  <label for="staticEmail2" class="visually">Profile Name</label>
+                                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Hirusha Gamage">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="staticEmail2" class="visually">Email Address</label>
+                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                                </div>
+                                <div class="col-auto"><br>
+                                  <button type="remove" class="btn btn-primary mb-3">Remove</button>
+                                </div>
+                              </form>
+                           </div>  
+                        </li>
+                        <li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class="" data-bs-toggle="collapse"
+                                data-bs-target="#youtube" aria-expanded="false" aria-controls="youtube">
+                                <i class="lni lni-youtube"></i>
+                                <span>Connect Youtube Account</span>
+                                <i class="lni lni-chevron-down"></i>    
+                             </a>
+                            </div>
+                            <ul id="youtube" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <div class="dropdown-connect">  
+                                  <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                    </div> 
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Connect</button>
+                                    <hr> 
+                                  </form>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class="" data-bs-toggle="collapse"
+                                data-bs-target="#twitter" aria-expanded="false" aria-controls="twitter">
+                                <i class="lni lni-twitter-original"></i>
+                                <span>Connect Twitter Account</span>
+                                <i class="lni lni-chevron-down"></i>    
+                             </a>
+                            </div>
+                            <ul id="twitter" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <div class="dropdown-connect">  
+                                  <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                    </div> 
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Connect</button> 
+                                    <hr>  
+                                  </form>
+                                </div>       
+                            </ul>
+                        </li><li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class="" data-bs-toggle="collapse"
+                                data-bs-target="#threads" aria-expanded="false" aria-controls="threads">
+                                <i class="lni lni-instagram"></i>
+                                <span>Connect Threads Account</span>
+                                <i class="lni lni-chevron-down"></i>    
+                             </a>
+                            </div>
+                            <ul id="threads" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <div class="dropdown-connect">
+                                <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                    </div> 
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Connect</button>
+                                    <hr> 
+                                  </form>
+                                    
+                            </ul>
+                        </li><li class="list-account">
+                            <div class="connect-dropdown-center ">
+                             <a href="#" class="" data-bs-toggle="collapse"
+                                data-bs-target="#tiktok" aria-expanded="false" aria-controls="tiktok">
+                                <i class="lni lni-tiktok"></i>
+                                <span>Connect Tiktok Account</span>
+                                <i class="lni lni-chevron-down"></i>    
+                             </a>
+                            </div>
+                            <ul id="tiktok" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                              <div class="dropdown-connect"> 
+                                <form class="px-4 py-3">
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Profile Name</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="profile name">
+                                    </div> 
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                          Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Connect</button>
+                                    <hr>
+                                  </form>
+                                </div>  
+                            </ul>
+                        </li>
+                    </div>
+              </div>  
+           </article>
+        </main>
+      
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
