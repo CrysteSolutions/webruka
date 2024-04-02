@@ -5,6 +5,7 @@
 
         <?php 
         include 'sidenav.php'; 
+
         ?>
           <!-- <div class="flex_column"> -->
             <form class="flex_column">
