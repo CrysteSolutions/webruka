@@ -31,7 +31,7 @@ html, body {
 .containe main {
     overflow: hidden;
     /* display: flex; */
-    height: 100%;
+    /* height: 100%; */
 }
 
 .containe main article {

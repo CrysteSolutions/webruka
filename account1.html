@@ -46,7 +46,7 @@
             /* display: flex; */
             /* margin-top: 10%; */
         }
-        .t_profile_area h1{
+        .t_content h1{
             margin-left: 10px;
             margin-bottom: 20px;
         }
@@ -68,6 +68,21 @@
             margin-right: 2%;
             background-color: #a02414;
             border: 1px solid rgb(247, 0, 0);
+        }
+        .t_redbuttonconor{
+            margin-left: 70%;
+            background-color: #a02414;
+            border: 1px solid rgb(247, 0, 0);
+        }
+        .hr-class{
+            height: 10px;  background-color:#0f0120;
+        }
+        .text_input{
+            width: 50%;
+            margin-left: 2%;
+        }
+        .social_connect{
+            
         }
     </style>
     </head>
@@ -170,8 +185,38 @@
                                 value="Login & security">
                         </div>
                     </div>
-                    <hr style="height: 10px;  background-color:#0f0120;">
-                    <div class="profile_details"
+                    <hr class="hr-class">
+                    <div class="profile_details">
+                        <h1>
+                            Profile name 
+                        </h1>
+                        <input class="text_input" type ="text" id="name_edite" placeholder="Name" value="Nimal"/><br>
+                        <input class="btn btn-primary t_redbuttonconor" type="button"
+                                value="Edite">
+                    </div>
+                    <hr class="hr-class">
+                    <div class="profile_details">
+                        <h1>
+                            Email Adress 
+                        </h1>
+                        <input class="text_input" type ="text" id="email_edite" placeholder="Email" value="Nimal@gmail.com"/><br>
+                        <input class="btn btn-primary t_redbuttonconor" type="button"
+                                value="Edite">
+                    </div>
+                    <hr class="hr-class">
+                    <div class="profile_details">
+                        <h1>
+                            Phone Number 
+                        </h1>
+                        <input class="text_input" type ="number" id="phone_number_edite" placeholder="Phone number" value="0123456789"/><br>
+                        <input class="btn btn-primary t_redbuttonconor" type="button"
+                                value="Edite">
+                    </div>
+                    <hr class="hr-class">
+                    <div class="social_connect">
+                        
+                    </div>
+
                 </div>
             </main>
 
