@@ -391,8 +391,39 @@ a.sidebar-link:hover {
 }
 
 
-/* chart2 */
 
+/* static chart2 */
+
+.card .card-header .grid{
+    color: #71747a;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+.card .card-header .grid .g-9{
+    width: 80px;
+}
+
+.card .card-body  {
+   margin-left: 2rem;
+   font-size: 15px;
+}
+
+.card .card-body .grid{
+    padding-right: 2rem;
+}
+
+.card .card-body .grid .g-10{
+   width:6rem;
+}
+.h_chart2 .grid .g-col-8{
+    margin-left: 2rem;
+}
+
+
+
+
+/* static chart3 */
 
 .text-center {
     text-align: left!important;
@@ -405,5 +436,32 @@ a.sidebar-link:hover {
 .post-link-click{
      margin-left:3rem;
 }
+
+.card-title{
+    font-size: 18px;
+}
+.card-body1{
+    padding: 5% 0 5%  10%;
+}
+.h_chart2 .grid .g-col-4{
+    margin-right: 5rem;
+}
+
+/* static chart4 */
+
+.h_chart2 .grid .g-col-9 .card-head{
+    margin: 1rem 1.5rem;
+}
+
+.h_card-body h5{
+    font-size: 16px;
+    color: #767a82;
+}
+
+.h_card-body .post-link-click p span{
+    padding-left: 1.5rem;
+    
+}
+
 
 
