@@ -336,7 +336,7 @@ a.sidebar-link:hover {
     padding: 1.5rem 2rem;
 }
 
-.static-btn button{
+.static-btn a{
     margin-right: 1.5rem;
     
 }
@@ -353,7 +353,7 @@ a.sidebar-link:hover {
     align-items: center;
 }
 
-.h_media-btn button{
+.h_media-btn a{
     margin-right: 1rem;
     width: 9rem;
     
@@ -378,6 +378,9 @@ a.sidebar-link:hover {
     }
     
 }
+
+
+
 
 /* chart1 */
 
@@ -404,8 +407,9 @@ a.sidebar-link:hover {
     width: 80px;
 }
 
-.card .card-body  {
-   margin-left: 2rem;
+.card .h_card-body1  {
+   background-color: #C8C3C3;
+   padding: 1rem 1rem;
    font-size: 15px;
 }
 
@@ -440,12 +444,21 @@ a.sidebar-link:hover {
 .card-title{
     font-size: 18px;
 }
+
 .card-body1{
     padding: 5% 0 5%  10%;
 }
+
 .h_chart2 .grid .g-col-4{
     margin-right: 5rem;
 }
+
+.card .card-body  {
+    margin-left: 2rem;
+    font-size: 15px;
+ }
+
+
 
 /* static chart4 */
 
@@ -464,4 +477,42 @@ a.sidebar-link:hover {
 }
 
 
+
+
+/* ....................facebook..................... */
+
+
+/* facebook like chart */
+
+
+.h_chart1 .h_card-body2{
+    font-size: 15px;
+    padding:1rem 1rem;
+}
+
+
+/* facebook summary */
+
+.h_card-body3 .card-head{
+    margin: 0rem 1rem 1rem 1rem;
+    font-size: 18px;
+}
+
+.h_card-body3 h5{
+    font-size: 16px;
+    color: #767a82;
+}
+
+.h_card-body3 .post-link-click p span{
+    padding-left: 1.5rem;
+    
+}
+
+.h_card-body3 .post-link-click{
+    margin-left:1rem;  
+}
+
+.h_card-body3 .grid{
+    justify-items: center;
+}
 
