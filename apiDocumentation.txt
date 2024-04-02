@@ -1,0 +1,9 @@
+api intigration :- 
+
+
+1) facebook page:- https://developers.facebook.com/docs/pages-api/
+2) facebook account :- 
+3) instagram api :- https://developers.facebook.com/docs/instagram-api
+4) youtube api :- https://developers.google.com/youtube/v3/getting-started
+5) tweeter api :- https://developer.twitter.com/en/docs/twitter-api
+6) tiktok api :- https://developers.tiktok.com/products/content-posting-api/ 
