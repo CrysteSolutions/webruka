@@ -636,3 +636,29 @@ border: 2px solid black;
 .t_update:hover{
     background-color: rgb(7, 95, 7);
 }
+
+
+/* ....................Thinula(Account login & security)..................... */
+
+.table_body{
+    background-color: aqua;
+}
+.table_body> tr th:nth-child(1) span{
+    margin-left: 20%;
+}
+.table_body> tr th:nth-child(2) span{
+    margin-left: 10%;
+}
+.table_body> tr th:nth-child(4) span {
+    margin-left: 25%;
+}
+.t-tbody{
+    background-color: rgb(163, 163, 163); 
+    font-weight: bold;
+}
+.t-tbody tr th:nth-child(1) span {
+    margin-left: 10%;
+}
+.table_button{
+    width: 80%;
+}
