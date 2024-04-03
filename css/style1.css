@@ -633,8 +633,11 @@ table .post_media{
 
 
 
-/* ....................Thinula..................... */
-
+/* ....................Thinula(Account details)..................... */
+.content{
+    margin-left:3% ;
+    margin-right: 3%;
+}
 
 .t_top-buttons{
     margin-top: 40px;
@@ -652,13 +655,9 @@ table .post_media{
     color: black;
     
 }
-.t_profile_area{
-    /* position: absolute; */
-    /* display: flex; */
-    /* margin-top: 10%; */
-}
+
 .content h1{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -692,6 +691,68 @@ table .post_media{
     width: 50%;
     margin-left: 2%;
 }
-.social_connect{
-    
+.t_box_media_connect{
+    background-color: rgb(219, 153, 29);
+    width: 400px;
+    margin-left: 2%;
+    height: 50px;
+    margin-bottom: 3%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+border-radius: 10px;
+border: 2px solid black;
+/* position: relative; */
+}
+.t_box_media_connect:hover{
+    color: rgb(245, 0, 61);
+}
+.link-to-media{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   
+}
+
+.t_svg{
+    margin-right: 30px;
+}
+.t_svg:hover{
+    color: rgb(0, 0, 0);
+}
+.t_update{
+    background-color: rgb(31 227 31);
+    color: black;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+.t_update:hover{
+    background-color: rgb(7, 95, 7);
+}
+
+
+/* ....................Thinula(Account login & security)..................... */
+
+.table_body{
+    background-color: aqua;
+}
+.table_body> tr th:nth-child(1) span{
+    margin-left: 20%;
+}
+.table_body> tr th:nth-child(2) span{
+    margin-left: 10%;
+}
+.table_body> tr th:nth-child(4) span {
+    margin-left: 25%;
+}
+.t-tbody{
+    background-color: rgb(163, 163, 163); 
+    font-weight: bold;
+}
+.t-tbody tr th:nth-child(1) span {
+    margin-left: 10%;
+}
+.table_button{
+    width: 80%;
 }
