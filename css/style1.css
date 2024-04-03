@@ -607,10 +607,91 @@ table .post_media{
     padding: 0.5rem 1rem;
 }
 
-.post_post .col-md-8 .post_post_p{
-    font-size: 10px;
+.post_post .col-md-8 p{
+    font-size: x-small;
     color: black;
+}
 
+
+/* ....................Post page..................... */
+
+/* Like chart */
+
+.h_post-body2{
+    background-color: #D0BDBB;
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.h_post-body2 p{
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+.h_post-body2 span{
+    margin-left: 1rem;
+}
+
+.h_post_like_bar{
+    padding-bottom: 1rem;
+}
+
+.h_post_con{
+    padding-bottom: 1rem;
+}
+
+/* post share */
+
+.h_post-body3{
+    display: flex;
+}
+
+.h_post-body3 .col-md-6 .card-body{
+    margin-left: 0rem;
+}
+
+.h_post-body3 .card-body p span{
+    margin-right: 2rem;
+}
+
+.h_post-body3 .col-md-6 .card-body .h_post_date{
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.h_post_share{
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+
+
+/*  reach chart */
+
+.h_post_reach_bar  .card-body .h_post_date{
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+
+/* post details */
+
+.h_post_detail .card-body p{
+    font-size: 15px;
+    margin-left: 3rem;
+    color: rgb(109, 158, 158);
+}
+
+.h_post_detail .card-body  .card-title{
+    font-size: 17px;
+}
+
+.h_post_detail .card-body .mb-3 .h_title img{
+    width: 30px;
+}
+
+.h_post_detail{
+    padding-bottom: 1.5rem;
 }
 
 
@@ -629,15 +710,8 @@ table .post_media{
 
 
 
+/* ....................Thinula..................... */
 
-
-
-
-/* ....................Thinula(Account details)..................... */
-.content{
-    margin-left:3% ;
-    margin-right: 3%;
-}
 
 .t_top-buttons{
     margin-top: 40px;
@@ -655,9 +729,13 @@ table .post_media{
     color: black;
     
 }
-
+.t_profile_area{
+    /* position: absolute; */
+    /* display: flex; */
+    /* margin-top: 10%; */
+}
 .content h1{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -691,68 +769,6 @@ table .post_media{
     width: 50%;
     margin-left: 2%;
 }
-.t_box_media_connect{
-    background-color: rgb(219, 153, 29);
-    width: 400px;
-    margin-left: 2%;
-    height: 50px;
-    margin-bottom: 3%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-justify-content: center;
-border-radius: 10px;
-border: 2px solid black;
-/* position: relative; */
-}
-.t_box_media_connect:hover{
-    color: rgb(245, 0, 61);
-}
-.link-to-media{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-   
-}
-
-.t_svg{
-    margin-right: 30px;
-}
-.t_svg:hover{
-    color: rgb(0, 0, 0);
-}
-.t_update{
-    background-color: rgb(31 227 31);
-    color: black;
-    margin-left: 3%;
-    margin-bottom: 3%;
-}
-.t_update:hover{
-    background-color: rgb(7, 95, 7);
-}
-
-
-/* ....................Thinula(Account login & security)..................... */
-
-.table_body{
-    background-color: aqua;
-}
-.table_body> tr th:nth-child(1) span{
-    margin-left: 20%;
-}
-.table_body> tr th:nth-child(2) span{
-    margin-left: 10%;
-}
-.table_body> tr th:nth-child(4) span {
-    margin-left: 25%;
-}
-.t-tbody{
-    background-color: rgb(163, 163, 163); 
-    font-weight: bold;
-}
-.t-tbody tr th:nth-child(1) span {
-    margin-left: 10%;
-}
-.table_button{
-    width: 80%;
+.social_connect{
+    
 }
