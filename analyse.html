@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+
+
+    <div class="containe">
+        <header>
+            <nav class="navbar bg-primary" data-bs-theme=".bg-success">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="lni lni-netlify"></i>
+                        Webruka
+                    </a>
+                    <form class="d-flex">
+                        <button class="navbar-icon-btn" type="button">
+                            <i class="lni lni-alarm"></i>
+                        </button>
+                        <div class="form-check form-switch">   
+                             <input class="form-check-input" type="checkbox" id="darkModeSwitch"><br>
+                             <label class="form-check-label-text-light" for="darkModeSwitch">Mode</label>
+                          
+                        </div>
+                        <button class="navbar-icon-btn" type="button">
+                            <i class="lni lni-cog"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <aside id="sidebar">
+                <div class="d-flex">
+                    <div class="sidebar-logo">
+                        <img src="./image/download.jpeg" alt="profile-image" class="profile-image"> 
+                        <a href="#">G.H.L.Gamage</a>
+                    </div>
+                    <button class="toggle-btn" type="button">
+                        <i class="lni lni-angle-double-right"></i>
+                    </button>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-circle-plus"></i>
+                            <span>Creat Post</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-user"></i>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="statistic.html" class="sidebar-link">
+                            <i class="lni lni-bar-chart"></i>
+                            <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="add_account.html" class="sidebar-link">
+                            <i class="lni lni-users"></i>
+                            <span>Connect Social Media</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="sidebar-logout">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-exit"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </aside>
+            
+           <article>
+           
+           <div class="content">
+                <div class="static-btn">
+                    <a href="statistic.html" type="button" class="btn btn-secondary  btn-sm">
+                        <i class="lni lni-book"></i>Summary</a>
+                    <a href="analyse.html" type="button" class="btn btn-primary  btn-sm">
+                        <i class="lni lni-stats-up"></i>Analyse</a>
+                </div>
+                <div class="h_search-bar">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <div class="h_filter">
+                        <button class="btn btn-success" type="submit">
+                            <i class="fa-solid fa-filter"></i>Filter</button>
+                    </div>
+                </div>
+                <div class="h_post-list">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="highlight">
+                                <th scope="">Profile</th>
+                                <th scope="col">Post Tilte</th>
+                                <th scope="col">Social Media</th>
+                                <th scope="col">Post</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <th>
+                                    <div class="h_table-profile">
+                                        <img src="./image/download.jpeg" alt="profile" class="profile-image">
+                                        <div class="h_table-profile-name">
+                                            <a href="#">G.H.L.Gamage</a>
+                                            <p>2021-10-10   10.20 A.M</p>
+                                        </div>
+                                    </div>            
+                                </th>
+                                <td class="post_title">My First Post</td>
+                                <td class="post_media">
+                                    <img src="./image/facebook.png" alt="facebook" class="social-media">
+                                    <img src="./image/twitter.png" alt="twitter" class="social-media">
+                                    <img src="./image/instagram.png" alt="instagram" class="social-media">
+                                    <img src="./image/youtube.png" alt="linkedin" class="social-media">
+                                </td>
+                                <td class="post_post">
+                                    <a href="">
+                                    <div class="row g-1">
+                                            <div class="col-md-4">
+                                              <img src="image/rectangle98.png" class="img-fluid rounded" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p class="post_post_p">Hey friends! Did you know that {{ topic }} can improve your overall well-being and boost your productivity</p>
+                                            </div>
+                                    </div></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <div class="h_table-profile">
+                                        <img src="./image/download.jpeg" alt="profile" class="profile-image">
+                                        <div class="h_table-profile-name">
+                                            <a href="#">G.H.L.Gamage</a>
+                                            <p>2021-10-10   10.20 A.M</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="post_title">Amazing World</td>
+                                <td class="post_media">
+                                    <img src="./image/facebook.png" alt="facebook" class="social-media">
+                                    <img src="./image/instagram.png" alt="instagram" class="social-media">
+                                </td>
+                                <td class="post_post">
+                                    <a href="">
+                                    <div class="row g-1">
+                                           <div class="col-md-4">
+                                              <img src="image/rectangle98.png" class="img-fluid rounded" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p class="post_post_p">Hey friends! Did you know that {{ topic }} can improve your overall well-being and boost your productivity</p>
+                                            </div>
+                                    </div></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <div class="h_table-profile">
+                                        <img src="./image/download.jpeg" alt="profile" class="profile-image">
+                                        <div class="h_table-profile-name">
+                                            <a href="#">G.H.L.Gamage</a>
+                                            <p>2021-10-10   10.20 A.M</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="post_title">How are your feeling</td>
+                                <td class="post_media">
+                                    <img src="./image/youtube.png" alt="facebook" class="social-media">                                  
+                                    <img src="./image/instagram.png" alt="instagram" class="social-media">
+                                    <img src="./image/tiktok.png" alt="linkedin" class="social-media">
+                                </td>
+                                <td class="post_post">
+                                    <a href="">
+                                    <div class="row g-1">
+                                        <div class="col-md-4">
+                                          <img src="image/rectangle98.png" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="post_post_p">Hey friends! Did you know that {{ topic }} can improve your overall well-being and boost your productivity</p>
+                                        </div>
+                                    </div></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                
+            </div>   
+           </article>
+        </main>
+      
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

@@ -334,10 +334,12 @@ a.sidebar-link:hover {
 /* first btn */
 .static-btn{
     padding: 1.5rem 2rem;
+    
 }
 
 .static-btn a{
     margin-right: 1.5rem;
+    padding-right: 1rem;
     
 }
 
@@ -518,6 +520,98 @@ a.sidebar-link:hover {
 
 
 
+
+/* ....................analytics..................... */
+
+
+/* search bar */
+
+.h_search-bar{
+    display: flex;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+    
+}
+
+.h_search-bar input{
+    width: 30%;
+}
+
+.h_search-bar button i{
+    padding-right: 1rem;
+}
+
+.h_search-bar button{
+    padding:0.5rem 1rem;
+}
+
+
+/* post table */
+
+.h_table-profile{
+    display: flex; 
+    align-items: center;
+    width: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.h_table-profile img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 0rem 1rem;
+    border: #0e2238;
+    border-style: solid;
+}
+
+.h_table-profile a{
+    color: #585b5d;
+    font-size: 15px;
+}
+
+.h_table-profile p{
+    margin-bottom: auto;
+    font-size: xx-small;
+    color: gray;
+    margin-right: 1rem;
+}
+
+.h_post-list table th{
+    text-align: center;
+    width: 10%;
+}
+
+.h_post-list table td{
+    text-align: center;
+}
+
+.h_post-list table .post_title{
+    padding-top: 20px;
+}
+
+ table .post_media img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin: 0rem 0.3rem;
+}
+
+table .post_media{
+    padding-top: 20px;
+}
+
+.post_post .h_table-post{
+    display: flex; 
+    align-items: center;
+    width: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.post_post .col-md-8 .post_post_p{
+    font-size: 10px;
+    color: black;
+
+}
 
 
 
