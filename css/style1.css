@@ -729,11 +729,7 @@ table .post_media{
     color: black;
     
 }
-.t_profile_area{
-    /* position: absolute; */
-    /* display: flex; */
-    /* margin-top: 10%; */
-}
+
 .content h1{
     margin-left: 10px;
     margin-bottom: 20px;
@@ -769,6 +765,4 @@ table .post_media{
     width: 50%;
     margin-left: 2%;
 }
-.social_connect{
-    
-}
+
