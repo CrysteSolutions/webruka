@@ -10,25 +10,11 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style1.css">
     <style>
-        .t_social_media_account{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            width: 70%;
-            /* height: 100%; */
+        body{
+            margin: 0;
+            padding: 0;
         }
-        .t_text_box_social{
-            display: flex;
-            flex-direction: column;
-        }
-        .t_social_media_box{
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            background-color: rgb(240, 241, 227);
-            color: black;
-            height: 130px;
-        }
+       
     </style>
 </head>
 <body>
@@ -122,10 +108,80 @@
                         </textarea>
                     </div>
                     <div class="t_slides_social">
-                        
+                        <div class="t_row">
+                            <div class="t_col">
+                                <img src="image/youtube.png" alt="yt">
+                            </div>
+                            <div class="t_col">
+                                <img src="image/facebook.png" alt="fb">
+                            </div>
+                        </div>
+                        <div class="t_row">
+                            <div class="t_col">
+                                <img src="image/instagram.png" alt="insta">
+                            </div>
+                            <div class="t_col">
+                                <img src="image/twitter.png" alt="tw">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                  
+                <div id="container">
+                <div class="t_post_slides">
+                    <div id="slider-container">
+                        <span onclick="slideRight()" class="btn"></span>
+                        <div id="slider">
+                            <div class="slide">
+                                <img  src="image/rectangle98.png" alt="image"
+                                style="width: 300px; border-radius: 5px;">
+                                <h2 >
+                                    post title
+                                </h2>
+                                <h3>
+                                    likes & comments <br>
+                                    4k      3k 
+                                </h3>
+                            </div>
+                            <div class="slide">
+                                <img  src="image/rectangle98.png" alt="image"
+                                style="width: 300px; border-radius: 5px;">
+                                <h2 >
+                                    post title
+                                </h2>
+                                <h3>
+                                    likes & comments <br>
+                                    4k      3k 
+                                </h3>
+                                
+                            </div>
+                            <div class="slide"><img  src="image/rectangle98.png" alt="image"
+                                style="width: 300px; border-radius: 5px;">
+                                <h2 >
+                                    post title
+                                </h2>
+                                <h3>
+                                    likes & comments <br>
+                                    4k      3k 
+                                </h3></div>
+                            <div class="slide"><img  src="image/rectangle98.png" alt="image"
+                                style="width: 300px; border-radius: 5px;">
+                                <h2 >
+                                    post title
+                                </h2>
+                                <h3>
+                                    likes & comments <br>
+                                    4k      3k 
+                                </h3></div>
+                            <div class="slide"><span>150x150</span></div>
+                            <div class="slide"><span>150x150</span></div>
+                            <div class="slide"><span>150x150</span></div>
+                            <div class="slide"><span>150x150</span></div>
+                            
+                        </div>
+                        <span onclick="slideLeft()" class="btn"></span>
+                    </div>
+                </div>
+                  </div>
               </div>  
            </article>
         </main>
@@ -135,5 +191,6 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
    <script src="js/script.js"></script>
+   <script src="js/home_slide.js"></script>
 </body>
 </html>
