@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.containe {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.containe main {
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.containe main article {
+    display: flex;
+    width: 100%;
+
+}
+
+.containe main article .content {
+    overflow: auto;
+    min-height: 100h;
+    width: 100%;
+    background-color: #ffffff;
+  
+}
+
+
+/* sidebar */
+
+
+#sidebar {
+    position: fixed;
+    display: flex;
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    flex-direction: column;
+    position: relative;
+    border-top-right-radius: 20px;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding-top: 30px;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;   
+   
+}
+
+
+.sidebar-logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+}
+#sidebar .sidebar-footer{
+    position: absolute;
+    margin-top: -100px;
+    
+
+}
+
+#sidebar:not(.expand) .toggle-btn{
+    padding: 30px 1.5rem  0 1.5rem;
+
+
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+
+
+
+
+
+
+/* navigation bar */
+.navbar-icon-btn {
+    background: none;
+    border: none;
+    color: inherit; 
+    margin-right: 15px; 
+    font-size: 25px;
+    padding-right: 25px;  
+}
+
+.form-check.form-switch {
+    align-items: center; 
+    margin-bottom: 0; 
+    width: 40px;
+    padding-right: 25px;
+}
+
+
+.form-check-label {
+    margin-left: 10px; 
+}
+
+.navbar {
+    padding: 10px 10px; 
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; 
+}
+
+.navbar-brand i {
+    margin-right: 5px; 
+}
+.form-check-label-text-light{
+    color: #FFF;
+    right: 40px;
+    position: relative;
+    font-size: 12px;
+    top:-5px
+}
+
+
+
+
+
+
+
+/* connect dropdown */
+.list-account {
+    margin-bottom: 10px;
+    padding: 20px 0px 0px 30px;
+    list-style: none; 
+}
+
+.connect-dropdown-center {
+    background-color: #767a82;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.connect-dropdown-center a {
+    color: #fafbfe;
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+}
+
+.connect-dropdown-center a span {
+    margin-left: 10px;
+    width: 250px;
+}
+
+.connect-dropdown-center a i {
+    font-size: 24px; 
+    margin-right: 5px; 
+    white-space: nowrap; 
+}
+
+.sidebar-dropdown {
+    margin-top: 10px;
+}
+
+.sidebar-dropdown form {
+    margin-bottom: 0;
+}
+
+.sidebar-dropdown form hr {
+    margin-top: 10px; 
+}
+
+.dropdown-connect{
+    width: 55%;
+}
+
+
+
+
+/* show connect profile */
+
+.show-connect-profile{
+    margin-top: 10px;
+    padding-left: 30px;
+    margin-bottom:-20px;
+}
+
+.visually{
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+}
+
+.col-auto button{
+    background-color: red;
+    border-color: red;
+}
+
+.col-auto button :hover{
+    background-color: none;
+
+}
+
+/* show log profile details */
+
+.col-md-4{ 
+   grid-template-columns: 60% 70%;
+ 
+}
+.col-md-4 img{
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+
+
+
+
+/* .............Statistic page............................ */
+
+
+/* first btn */
+.static-btn{
+    padding: 1.5rem 2rem;
+    
+}
+
+.static-btn a{
+    margin-right: 1.5rem;
+    padding-right: 1rem;
+    
+}
+
+.static-btn i{
+    padding: 5px;
+}
+
+/* media btn */
+
+.h_media-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h_media-btn a{
+    margin-right: 1rem;
+    width: 9rem;
+    
+}
+
+.h_media-btn i{
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .h_media-btn {
+        display: block;
+        
+    }
+    .h_media-btn button{
+        margin-right: 1rem;
+        width: 9rem;
+        
+    }
+    
+    .h_media-btn i{
+        padding: 5px;
+    }
+    
+}
+
+
+
+
+/* chart1 */
+
+.h_chart1{
+    margin: 0rem auto 2rem auto;
+}
+
+.h_chart1 .card{
+   width: 90%;
+   margin:  2rem auto 0 auto;
+}
+
+
+
+/* static chart2 */
+
+.card .card-header .grid{
+    color: #71747a;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+.card .card-header .grid .g-9{
+    width: 80px;
+}
+
+.card .h_card-body1  {
+   background-color: #C8C3C3;
+   padding: 1rem 1rem;
+   font-size: 15px;
+}
+
+.card .card-body .grid{
+    padding-right: 2rem;
+}
+
+.card .card-body .grid .g-10{
+   width:6rem;
+}
+.h_chart2 .grid .g-col-8{
+    margin-left: 2rem;
+}
+
+
+
+
+/* static chart3 */
+
+.text-center {
+    text-align: left!important;
+}
+
+.h_chart2-reach{
+    margin:auto 1rem;
+}
+
+.post-link-click{
+     margin-left:3rem;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+.card-body1{
+    padding: 5% 0 5%  10%;
+}
+
+.h_chart2 .grid .g-col-4{
+    margin-right: 5rem;
+}
+
+.card .card-body  {
+    margin-left: 2rem;
+    font-size: 15px;
+ }
+
+
+
+/* static chart4 */
+
+.h_chart2 .grid .g-col-9 .card-head{
+    margin: 1rem 1.5rem;
+}
+
+.h_card-body h5{
+    font-size: 16px;
+    color: #767a82;
+}
+
+.h_card-body .post-link-click p span{
+    padding-left: 1.5rem;
+    
+}
+
+
+
+
+/* ....................facebook..................... */
+
+
+/* facebook like chart */
+
+
+.h_chart1 .h_card-body2{
+    font-size: 15px;
+    padding:1rem 1rem;
+}
+
+
+/* facebook summary */
+
+.h_card-body3 .card-head{
+    margin: 0rem 1rem 1rem 1rem;
+    font-size: 18px;
+}
+
+.h_card-body3 h5{
+    font-size: 16px;
+    color: #767a82;
+}
+
+.h_card-body3 .post-link-click p span{
+    padding-left: 1.5rem;
+    
+}
+
+.h_card-body3 .post-link-click{
+    margin-left:1rem;  
+}
+
+.h_card-body3 .grid{
+    justify-items: center;
+}
+
+
+
+
+/* ....................analytics..................... */
+
+
+/* search bar */
+
+.h_search-bar{
+    display: flex;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+    
+}
+
+.h_search-bar input{
+    width: 30%;
+}
+
+.h_search-bar button i{
+    padding-right: 1rem;
+}
+
+.h_search-bar button{
+    padding:0.5rem 1rem;
+}
+
+
+/* post table */
+
+.h_table-profile{
+    display: flex; 
+    align-items: center;
+    width: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.h_table-profile img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 0rem 1rem;
+    border: #0e2238;
+    border-style: solid;
+}
+
+.h_table-profile a{
+    color: #585b5d;
+    font-size: 15px;
+}
+
+.h_table-profile p{
+    margin-bottom: auto;
+    font-size: xx-small;
+    color: gray;
+    margin-right: 1rem;
+}
+
+.h_post-list table th{
+    text-align: center;
+    width: 10%;
+}
+
+.h_post-list table td{
+    text-align: center;
+}
+
+.h_post-list table .post_title{
+    padding-top: 20px;
+}
+
+ table .post_media img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin: 0rem 0.3rem;
+}
+
+table .post_media{
+    padding-top: 20px;
+}
+
+.post_post .h_table-post{
+    display: flex; 
+    align-items: center;
+    width: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.post_post .col-md-8 p{
+    font-size: x-small;
+    color: black;
+}
+
+
+/* ....................Post page..................... */
+
+/* Like chart */
+
+.h_post-body2{
+    background-color: #D0BDBB;
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.h_post-body2 p{
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+.h_post-body2 span{
+    margin-left: 1rem;
+}
+
+.h_post_like_bar{
+    padding-bottom: 1rem;
+}
+
+.h_post_con{
+    padding-bottom: 1rem;
+}
+
+/* post share */
+
+.h_post-body3{
+    display: flex;
+}
+
+.h_post-body3 .col-md-6 .card-body{
+    margin-left: 0rem;
+}
+
+.h_post-body3 .card-body p span{
+    margin-right: 2rem;
+}
+
+.h_post-body3 .col-md-6 .card-body .h_post_date{
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.h_post_share{
+    display: flex;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+
+
+/*  reach chart */
+
+.h_post_reach_bar  .card-body .h_post_date{
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+
+/* post details */
+
+.h_post_detail .card-body p{
+    font-size: 15px;
+    margin-left: 3rem;
+    color: rgb(109, 158, 158);
+}
+
+.h_post_detail .card-body  .card-title{
+    font-size: 17px;
+}
+
+.h_post_detail .card-body .mb-3 .h_title img{
+    width: 30px;
+}
+
+.h_post_detail{
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ....................Thinula..................... */
+
+
+.t_top-buttons{
+    margin-top: 40px;
+    /* margin-left: 40%; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative; */
+}
+.t_top-buttons .tbtn{
+    /* margin-left: 6%; */
+    background-color: aqua;
+    color: black;
+    
+}
+
+.content h1{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.t_profile_pic{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+}
+.t_editable_profile{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 2%;
+    margin-right: 20%;
+}
+.T_redbtn{
+    margin-right: 2%;
+    background-color: #a02414;
+    border: 1px solid rgb(247, 0, 0);
+}
+.t_redbuttonconor{
+    margin-left: 70%;
+    background-color: #a02414;
+    border: 1px solid rgb(247, 0, 0);
+}
+.hr-class{
+    height: 10px;  background-color:#0f0120;
+}
+.text_input{
+    width: 50%;
+    margin-left: 2%;
+}
+
+/* ....................Thinula - home page..................... */
+
+.t_social_media_account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 90%;
+    /* height: 100%; */
+}
+.t_text_box_social{
+    display: flex;
+    flex-direction: column;
+}
+.t_social_media_box{
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: rgb(240, 241, 227);
+    color: black;
+    height: 130px;
+    margin-left: 2%;
+    
+}
+.t_slides_social{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20%; */
+    margin-top: 3%;
+    
+}
+.t_row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+.t_col{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+#slider-container {
+height: 400px;
+width: 85vw;
+max-width: 1400px;
+position: relative;
+overflow: hidden;
+padding: 20px;
+}
+#slider-container .btn {
+position: absolute;
+top: calc(50% - 30px);
+height: 15px;
+width: 15px;
+border-left: 8px solid #696969;
+border-top: 8px solid #696969;
+cursor: pointer;
+}
+#slider-container .btn:hover {
+transform: scale(1.2);
+}
+#slider-container .btn.inactive {
+border-color: #282828
+}
+#slider-container .btn:first-of-type {
+transform: rotate(-45deg);
+left: 10px
+}
+#slider-container .btn:last-of-type {
+transform: rotate(135deg);
+right: 10px;
+}
+#slider-container #slider {
+display: flex;
+width: 1000%;
+height: 100%;
+transition: all .5s;
+}
+#slider-container #slider .slide {
+height: 90%;
+margin: auto 10px;
+background-color: #b5b5b5;
+border-radius: 5px;
+box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+display: flex;
+flex-direction: column;
+place-items: center; 
+}
+#slider-container #slider .slide span {
+color: white;
+font-size: 60px;
+}
+
+
+@media only screen and (min-width: 1100px) {
+#slider-container #slider .slide {
+width: calc(2.5% - 20px);
+}
+}
+
+@media only screen and (max-width: 1100px) {
+#slider-container #slider .slide {
+width: calc(3.3333333% - 20px);
+}
+}
+
+@media only screen and (max-width: 900px) {
+#slider-container #slider .slide {
+width: calc(5% - 20px);
+}
+}
+
+@media only screen and (max-width: 550px) {
+#slider-container #slider .slide {
+width: calc(10% - 20px);
+}
+}
